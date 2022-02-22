@@ -1,0 +1,270 @@
+package com.org.day2_hw;
+
+class Vehicle {
+	int x;
+	Vehicle(int x) {
+		this.x = x;
+		System.out.println("Vehical class Constructor "+x);
+	}
+	
+	void sound() {
+		System.out.println("Full base sound");
+	}
+	void engin(int n) {
+		System.out.println("engin No is "+n);
+	}
+	void price(int x) {
+		System.out.println("price is y"+x);
+	}
+	void sitting(int x) {
+		System.out.println("Type of Sitter "+x);
+	}
+}
+
+
+
+class CarClass extends Vehicle {
+	CarClass() {
+		super( 30);
+		System.out.println("Car class Constructor");
+	}
+	
+	void color(String str) {
+		System.out.println("Car color is "+str);
+		
+	}
+	void model(String m) {
+		System.out.println("model of car is "+m);
+	}
+}
+
+class Honda extends CarClass {
+	void CCType(int x) {
+		System.out.println("cars cc is "+x);
+	}
+}
+
+class HondaCity extends Honda{
+	void display() {
+		System.out.println("Honda city is Fulluy lassed by all this feature ");
+	}
+}
+
+
+public class CarTesting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		HondaCity h1 = new HondaCity();
+		
+		h1.sound();
+		h1.engin(355);
+		h1.price(252233);
+		h1.sitting(4);
+		h1.color("White");
+		h1.model("JKL Model");
+		h1.CCType(5000);
+		h1.display();
+		
+		
+	}
+
+}
+.............................
+package com.org.day2_hw;
+
+class Protein{
+	Protein(){
+		System.out.println(" Protein is very useful for living things");
+	}
+	Protein(String s){
+		System.out.println(s +" good for healty ");
+	}
+	Protein(String s,String s1){
+		System.out.println(s +" & "+ s1 +" are very necessary for child and old people");
+	}
+}
+
+
+class Source extends Protein{
+	
+	String fruits;
+	String milk;
+	Source(){
+		super();
+	}
+	Source(String fruits){
+		super(fruits);
+	}
+	
+	Source(String fruits,String milk){
+		super(fruits,milk);
+	}
+}
+
+public class MyProtein {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Source s1 = new Source();
+		Source s = new Source("Papaya");
+		Source s2 = new Source("fruits","milk");
+		
+		
+	}
+
+}
+.......................................
+package com.org.day2_hw;
+
+  class Digital {
+
+	void power()
+	{
+		System.out.println("press the button for power");
+	}
+	void memory()
+	{
+		System.out.println("sufficient memory is available");
+	}
+  
+  }
+	class laptop extends Digital
+	{
+		void color()
+		{
+			System.out.println("laptop color is black");
+		}
+		void model()
+		{
+			System.out.println("11th gen ");
+		}
+	}
+	
+	class chrome extends Digital
+	{
+		void noOfKeys()
+		{
+		}
+			System.out.println("lots of keys are there");
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	chrome  ch= new chrome();
+	ch.power();
+	ch.memory();
+	ch.color();
+	ch.model();
+	ch.noOfKeys();	
+		
+	}
+..........................................................
+package com.org.day2_hw;
+
+import java.io.*;
+class Digital 
+	{
+
+		void power()
+		{
+		System.out.println("press the button for power");
+		}
+		void memory()
+		{
+		System.out.println("sufficient memory is available");
+		}
+
+	}
+	
+	class laptop extends Digital
+	{
+		void screen_size()
+		{
+			System.out.println("all sizes available");
+		}
+		void displayQua()
+		{
+			System.out.println("display quality is good");
+		}
+	}
+	
+	class ipad extends Digital
+	{
+		void color()
+		{
+			System.out.println(" ipad laptop color is black");
+		}
+		void model()
+		{
+			System.out.println("11th gen ipad ");
+		}
+	}
+	
+	
+	class chrome extends laptop
+	  {
+		 void noOfKeys()
+		 {		
+			System.out.println("lots of keys are there");	
+	     }
+	 }
+	
+
+class Test {
+	public static void main (String[] args) {
+	 	laptop l=new laptop();
+		l.power();
+		l.memory();
+		l.screen_size();
+		l.displayQua();
+		
+		ipad i=new ipad();
+		i.color();
+		i.model();
+		
+		chrome c=new chrome();
+		c.noOfKeys();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

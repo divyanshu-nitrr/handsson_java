@@ -1,0 +1,172 @@
+package com.org.day1;
+
+public class pattern1_hw {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for(int val=4;val>=1;val--)
+		{
+			for(int num=val;num>=1;num--)
+			{
+				System.out.print("*");
+			}
+		
+		System.out.println();
+		}
+	 
+	}
+
+}
+
+.......................................
+package com.org.day1;
+import java.util.Scanner;
+public class selectionbased_hw {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int total=0;
+		System.out.print("Enter no of dishes you want to order: ");
+		int orderno=sc.nextInt();
+		while(orderno-->0){
+		 System.out.println("Enter your preference: ");
+		 int choice=sc.nextInt();
+		 switch(choice){
+		 case 1:
+			 System.out.println("South indian dish");
+			 int si=250;
+			 total+=si;
+			 System.out.println("Total bill: "+total);
+		    break;
+		 case 2:
+			 System.out.println("north indian dish");
+			 int ni=200;
+			 total+=ni;
+			 System.out.println("Total bill: "+total);
+			 break;
+		 case 3:
+			 System.out.println("rajasthani dish");
+			 int rd=300;
+			 total+=rd;
+			 System.out.println("Total bill: "+total);
+		     break;
+		  default:
+			  System.out.println("Nothing is ordered");
+		 }
+		 if(total>500)
+		 {
+			 System.out.println("You will get main course for ordering above Rs 500");
+		 }
+	}    	     
+		
+	}
+
+}
+....................................................................................................
+
+package com.org.day1;
+import java.util.Scanner;
+public class leapyear_hw {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         Scanner sc=new Scanner(System.in);
+         System.out.println("Enter year: ");
+         int year=sc.nextInt();
+         boolean leapyr=false;
+         if(year%4==0)
+         {
+        	 if(year%100==0){
+        		 if(year%400==0)
+        			 leapyr=true;
+        		 else
+        			 leapyr=false;
+        	 }
+        	 else
+        		 leapyr=true;
+         }
+         else leapyr=false;
+        		 
+        		 if(leapyr)
+        			 System.out.println("Leap year");
+        		 else
+        			 System.out.println("Not leap");
+		
+	}
+
+}
+......................................................................................
+
+package com.org.day1;
+import java.util.Scanner;  
+
+public class SwitchCaseDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your choice");
+		System.out.println("1 for coffee");
+		System.out.println("2 for tea");
+		System.out.println("3 for cold drink");
+		System.out.println("4 for main course");
+		int choice=sc.nextInt();
+		switch(choice){
+		case 1:
+			System.out.println("Welcome into the hotel ABC food course");
+			System.out.println("Please enjoy your coffee");
+			break;
+			
+		case 2:
+			System.out.println("Welcome in the xyz food court");
+			System.out.println("Please have your tea");
+			break;
+			
+		case 3:
+			System.out.println("Welcome into ttt hotel");
+			System.out.println("Enjoy your drink");
+			break;
+
+		case 4:
+			System.out.println("welcone into hotel dawat");
+			System.out.println("please select your dishes");
+			break;
+			
+		default:
+			System.out.println("Hotel not surving sorry");
+			
+		}
+		
+		
+		
+	}
+
+}
+..........................................................................
+
+package com.org.day1;
+import java.util.Scanner;
+public class atm_dowhile_hw {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int pass =1234;
+		//System.out.println("Enter pin");
+	//	int pin=sc.nextInt();
+		int i=1;
+		do
+		{
+			System.out.println("enter pin");
+			int pin=sc.nextInt();
+			if(pin==pass)
+				System.out.println("You can use ATM");
+			    
+			else
+				System.out.println("try again");
+		}while(i<=3);
+			
+	}
+
+}

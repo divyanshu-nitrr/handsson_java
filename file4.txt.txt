@@ -1,0 +1,135 @@
+package com.org.day3_questions;
+
+abstract class Parent{
+	abstract void message();
+}
+class child1 extends Parent
+{
+	void message()
+	{
+		System.out.println("This is first subclass");
+	}
+}
+class child2 extends Parent
+{
+	void message()
+	{
+		System.out.println("This is second subclass");
+	}
+}
+
+
+public class abstract_que1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		child1 c1=new child1();
+		c1.message();
+		
+		child2 c2=new child2();
+		c2.message();
+		
+		
+	}
+
+}
+..............................................
+package com.org.day3_questions;
+abstract class Bank{
+	abstract void getBalance();
+}
+
+class BankA extends Bank
+{
+	void getBalance()
+	{
+		System.out.println("$100 deposited in BankA");
+	}
+}
+
+class BankB extends Bank
+{
+	void getBalance()
+	{
+		System.out.println("$150 deposited in BankB");
+	}
+}
+
+class BankC extends Bank
+ {
+	void getBalance()
+	{
+		System.out.println("$200 deposited in BankC");
+	}
+ }
+
+
+public class abstract_class_que2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		BankA a=new BankA();
+		a.getBalance();
+		
+		BankB b=new BankB();
+		b.getBalance();
+		
+		BankC c=new BankC();
+		c.getBalance();
+	}
+
+}
+.............................................
+package com.org.day3_questions;
+abstract class Aaa{
+	abstract void a_method();
+	//class Aaa()
+	//{
+		//System.out.println("this is constructor of abstract class");
+	//}
+	void b_method()
+	{
+		System.out.println("Normal method of abstract class");
+	}
+}
+
+
+class subclass extends  Aaa{
+	void a_method()
+	{
+		System.out.println("This is abstract method");
+	}
+}
+
+
+public class abstract_class_que3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      subclass ob=new subclass();
+      ob.a_method();
+      ob.b_method();
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

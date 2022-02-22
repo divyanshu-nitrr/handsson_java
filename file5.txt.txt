@@ -1,0 +1,152 @@
+package com.org.day6_questions;
+
+public class findMatch_inString1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int count=0;
+		String batch_id[]={"abc2022","abd2021","bcd2022","def2022","efg2023"};
+		for(int i=0;i<batch_id.length;i++)
+		{
+			if(batch_id[i].endsWith("22"))
+				count++;
+		}
+	System.out.println("Total batches in 2022 is:"+count);
+	}
+
+}
+.....................................................
+package com.org.day6_questions;
+
+public class countdiff_players2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int btsman=0,bwlr=0,all_Rounder=0;
+		String cricketers[]={"MS dhoni-batsman","virat-batsman","yuvra-allrounder",
+		"pandya-allrounder","ashwin-bowler","bhuvi-bowler","kuldeep-bawler"};
+		
+		for(int i=0;i<cricketers.length;i++)
+		{
+			if(cricketers[i].contains("batsman"))
+				btsman++;
+			else if(cricketers[i].contains("bowler"))
+				bwlr++;
+			else
+			 all_Rounder++;
+		}
+		System.out.println("Total batsman are:"+btsman);
+		System.out.println("Total bowlers are:"+bwlr);
+		System.out.println("Total all-rounders are:"+all_Rounder);
+		
+	}
+
+}
+..........................................................
+package com.org.day6_questions;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Set_Que3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Set<NewEmployee>hs=new HashSet<>();
+		NewEmployee e=new NewEmployee(11,2,"ABC","Java",70000);
+		NewEmployee e1=new NewEmployee(12,3,"XYZ","Python",50000);
+		
+		Set<OldEmployee>hs1=new HashSet<>();
+		OldEmployee emp=new OldEmployee(13,2,"IJK","C++",30000);
+		
+		hs.add(e);
+		hs.add(e1);
+		hs1.add(emp);
+		
+		int size=hs.size();
+		int size1=hs1.size();
+		 System.out.println("Total employees are:"+(size+size1));
+	 
+		 
+	}
+
+}
+........................................................
+package com.org.day6_questions;
+
+public class NewEmployee {
+
+	int id,exp;
+	String name,skill;float salary;
+
+	NewEmployee(int id,int exp,String name,String skill,float salary)
+	{
+		super();
+		this.id=id;
+		this.exp=exp;
+		this.name=name;
+		this.skill=skill;
+		this.salary=salary;
+	}
+	
+	
+}
+package com.org.day6_questions;
+
+public class OldEmployee {
+
+	int id,exp;
+	String name,skill;float salary;
+
+	public OldEmployee(int id,int exp,String name,String skill,float salary) {
+		// TODO Auto-generated constructor stub
+		super();
+		this.id=id;
+		this.exp=exp;
+		this.name=name;
+		this.skill=skill;
+		this.salary=salary;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

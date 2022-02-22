@@ -1,0 +1,128 @@
+package com.org.day2_questions;
+
+class Parent{
+	void imple()
+	{
+		System.out.println("This is parent class");
+	}
+}
+ class Child extends Parent{
+	 void defini()
+	 {
+		 System.out.println("this is child class");
+	 }
+	 
+ }
+
+
+
+public class inheritance_que1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Parent p1=new Parent();
+		p1.imple();
+		
+		Child c=new Child();
+		c.imple();
+		c.defini();
+		
+		Parent p=new Child();
+		p.imple();
+	}
+
+}
+.......................
+package com.org.day2_questions;
+
+public class Question_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String week_name[]={"sun","mon","tue","wed","thur","fri","sat"};
+		for(int i=0;i<week_name.length;i++)
+		{
+			System.out.println(week_name[i]);
+		}
+	}
+
+}
+.......................................
+
+package com.org.day2_questions;
+
+      class rectangle {
+
+	 int length;
+     int breadth;
+     void area_rec(int length, int breadth)
+     {
+   	  System.out.println(length*breadth);
+     }
+    }
+	
+    public class rectangle_que3
+		
+    {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     /* int length;
+      int breadth;
+      void area_rec(int length, int breadth)
+      {
+    	  System.out.println(length*breadth);
+      }
+		*/
+	rectangle r=new rectangle();
+	area_rec(10,20);
+		
+		
+	}
+
+}
+...........................................
+package com.org.day2_questions;
+
+ public class Calculator_Que_4 {
+
+	void addition(int a,int b)
+	{
+		System.out.println((a+b));
+	}
+	void addition(int a,int b,int c)
+	{
+		System.out.println((a+b+c));	 
+	}
+	void subtraction(int a,int b)
+	{
+		System.out.println(a-b);
+	}
+	void subtraction(int a,int b,int c)
+	{
+		System.out.println((a-b-c));
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   
+		 Calculator_Que_5 ob = new  Calculator_Que_5();
+		 	ob.addition(20, 10);
+		 	ob.addition(10, 20, 30);
+		 	ob.subtraction(20, 10);
+		 	ob.subtraction(40, 10, 5);
+		
+		
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
